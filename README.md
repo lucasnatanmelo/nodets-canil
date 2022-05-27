@@ -1,4 +1,4 @@
-# nodets-canil
+# Site para adoção de animais
 Projeto feito no módulo do curso Node + Typescript
 
 ## Sobre o projeto
