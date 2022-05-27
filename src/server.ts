@@ -18,7 +18,7 @@ server.use(mainRoutes); //Define a rota que o server irá utilizars
 
 //Erro caso o usuário vá para outra página
 server.use((req, res)=>{
-    res.send('página não encontrada');
+    res.render('pages/404');
 });
 
 server.listen(80); //erro utilizando process.env.PORT .env  
