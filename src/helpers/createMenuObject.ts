@@ -1,3 +1,6 @@
+//RESUMO:
+//Aqui ficará o suporte para auxiliar na animação dos botões
+
 type MenuOptions = '' | 'all' | 'dog' | 'cat' | 'fish';
 
 export const createMenuObject = (activeMenu: MenuOptions) => {

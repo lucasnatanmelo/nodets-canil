@@ -1,5 +1,8 @@
-import {Request, Response} from 'express';
+//RESUMO:
+//Aqui irá ficar os renderizadores para gerar os filtros
+//A listagem vem de helpers/createMenuObject
 
+import {Request, Response} from 'express';
 import {Pet} from '../models/pet';
 import { createMenuObject } from '../helpers/createMenuObject';
 

@@ -1,4 +1,6 @@
-//Banco de dados fictício
+//RESUMO:
+//Aqui irá ficar o banco de dados em data e ficará as funções para filtragem de animais por tipo e nome
+
 type PetType = 'dog' | 'cat' | 'fish';
 type PetSex = 'Masculino' | 'Feminino';
 type Pet = {
@@ -8,6 +10,7 @@ type Pet = {
     color: string,
     sex: PetSex
 }
+
 const data: Pet [] = [
     {
         type: 'dog',
@@ -129,6 +132,7 @@ const data: Pet [] = [
         sex: 'Masculino'
     },
 ];
+
 export const Pet = {
     //Função pega todos os pets
     getAll: (): Pet[] => {
