@@ -20,9 +20,12 @@ server.use(express.static(path.join(__dirname, '../public')));//Seta como estát
 server.use(mainRoutes); //Define a rota que o server irá utilizar
 
 //Erro caso o usuário vá para outra página
+
+const port = 80;
+
 server.use((req, res)=>{
     res.render('pages/404');
 });
 
-server.listen(80); //erro utilizando process.env.PORT .env  
+server.listen(port, () => console.log(`Server running on port ${port}, http://localhost:${port}`)); //erro utilizando process.env.PORT .env  
 
